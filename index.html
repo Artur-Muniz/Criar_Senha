@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="gerador">
+
+    <form>
+      <h2>Tamanho</h2>
+
+      <input type="range" min="8" max="50" value="8" id="slider">
+      <span id="tamanho"></span>
+
+      <h2>Dificuldade</h2>
+
+      <input type="radio" id="facilPronunciar" name="opcao" value="facilP" title="Evite números e caracteres especiais">
+      <label for="facilPronunciar">Fácil de pronunciar</label>
+
+      <input type="radio" id="facilLer" name="opcao" value="facilL" title="Evite caracteres ambíguos como I, l("L"), 1, O e 0">
+      <label for="facilLer">Fácil de ler</label>
+
+      <input type="radio" id="todos" name="opcao" value="todos" title="Qualquer combinação de caracteres como !, 7, h, K e l1">
+      <label for="totos">Todos os caracteres</label>
+
+      <br>
+
+      <h2>Opções</h2>
+
+      <input type="checkbox" id="letraMaiuscula" value="letraMa">
+      <label for="letraMaiuscula">Letra maiúscula</label>
+
+      <input type="checkbox" id="letraMinuscula" value="letraMi">
+      <label for="letraMinuscula">Letra minúscula</label>
+
+      <input type="checkbox" id="numeros" value="numeros">
+      <label for="numeros">Números</label>
+
+      <input type="checkbox" id="simbolos" value="simbolos">
+      <label for="simbolos">Símbolos</label>
+
+      <h2>Repetição</h2>
+
+      <input type="checkbox" id="repeticao" value="repeticao">
+      <label for="repeticao">Não Repetir</label>
+
+      <h2>Barra de Progresso</h2>
+
+      <button id="criar" type="submit">Criar</button>
+    </form>
+
+    <div id="retorno"></div>
+    <div id="barraForca" style="width: 300px; height: 30px; border: 2px solid grey;"></div>
+    <div id="senhaForca"></div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
